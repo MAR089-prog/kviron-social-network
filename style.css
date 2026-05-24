@@ -1,0 +1,89 @@
+/* 1. Настройки для всего сайта (шрифт и серый фон, как в ВК) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #edf2f6;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Стиль для верхней шапки (сделаем её тёмно-синей, как у суровых программистов) */
+header {
+    background-color: #224b7a;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Поле поиска в шапке */
+header input {
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: none;
+    width: 250px;
+}
+
+/* 3. Левое меню (выстраиваем аккуратно в столбик) */
+aside {
+    float: left;
+    width: 150px;
+    padding: 20px;
+}
+
+aside ul {
+    list-style: none; /* Убираем точки у списка */
+    padding: 0;
+    margin: 0;
+}
+
+aside li {
+    padding: 8px 0;
+    color: #2c3e50;
+    cursor: pointer;
+}
+
+/* 4. Центральная секция (Лента и создание постов) */
+section {
+    margin-left: 210px; /* Отступаем от левого меню */
+    padding: 20px;
+    max-width: 600px;
+}
+
+/* Белая карточка для создания поста */
+section div {
+    background-color: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Поле ввода текста */
+textarea {
+    width: 100px;
+    min-height: 60px;
+    border: 1px solid #d3d9de;
+    border-radius: 8px;
+    padding: 10px;
+    resize: none; /* Запрещаем растягивать окно мышкой */
+}
+
+/* Кнопка "Опубликовать" */
+button {
+    background-color: #4a76a8;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #3b628e; /* Кнопка темнеет при наведении */
+}
